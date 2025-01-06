@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой сайт</title>
+    <link rel="stylesheet" href="container.css"> <!-- Подключаем стили для основного контейнера -->
+    <link rel="stylesheet" href="group.css"> <!-- Подключаем стили для блока "Группа" -->
+    <link rel="stylesheet" href="answers.css"> <!-- Подключаем стили для блока "Ответы" -->
+</head>
+<body>
+    <div class="main-container"> <!-- Новый основной контейнер -->
+        <div class="task-text">Текст задания</div> <!-- Новый элемент для текста задания -->
+        <div class="container">
+            <!-- Блоки "Группа" будут добавлены здесь -->
+            <div id="groupContainer"></div> 
+            <div class="answers">
+                <!-- Мини-блоки ответов будут добавлены динамически с помощью JavaScript -->
+            </div>                       
+        </div>
+    </div>
+
+    <!-- Подключаем JavaScript файл -->
+    <script src="script.js"></script>
+</body>
+</html>

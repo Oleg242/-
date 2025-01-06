@@ -1,0 +1,36 @@
+/* container.css */
+body {
+    margin: 0;
+    height: 100vh; /* Высота вьюпорта */
+    display: flex; /* Используем flexbox */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    background-color: #f0f0f0; /* Цвет фона страницы */
+}
+
+.main-container {
+    width: 747px;          /* Ширина контейнера */
+    height: 410px;         /* Высота контейнера */
+    background-color: #F0F8FF; /* Цвет контейнера (цвет Alice Blue) */
+    border-radius: 8px;    /* Закругленные углы */
+    display: flex;          /* Используем flexbox для расположения содержимого */
+    flex-direction: column; /* Вертикальная ориентация для содержимого */
+    padding: 20px;         /* Отступы внутри контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для визуального эффекта */
+}
+
+/* Общий контейнер для блоков "Группа" */
+#groupContainer {
+    display: flex;                /* Используем flexbox для размещения блоков */
+    gap: 10px;                   /* Отступы между блоками "Группа" */
+}
+
+/* Контейнер для блоков "Группа" с горизонтальной ориентацией по умолчанию */
+#groupContainer.default {
+    flex-direction: row;          /* Горизонтальная ориентация для блоков "Группа" */
+}
+
+/* Контейнер для блоков "Группа" с вертикальной ориентацией для альтернативного стиля */
+#groupContainer.alternate {
+    flex-direction: column;       /* Вертикальная ориентация для блоков "Группа" */
+}
